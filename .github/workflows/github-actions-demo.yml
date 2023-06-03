@@ -1,0 +1,12 @@
+name: Github Action training
+on: [push]
+jobs:
+  Explore-Github-Actions:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: run PSScript
+        shell: pwsh
+        run: |
+          echo "Hello World"
+
