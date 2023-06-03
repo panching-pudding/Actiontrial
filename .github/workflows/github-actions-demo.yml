@@ -1,5 +1,8 @@
 name: Github Action training
-on: [push]
+on:
+  push:
+  workflow_dispatch:
+
 jobs:
   Explore-Github-Actions:
     runs-on: windows-latest
