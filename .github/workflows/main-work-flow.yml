@@ -8,10 +8,4 @@ jobs:
     runs-on: windows-latest
     steps:
       # - uses: actions/checkout@v3
-      - uses: panching-pudding/Actiontrial/ .github/workflows/github-actions-demo.yml@main
-      - name: run PSScript in main
-        shell: pwsh
-        run: |
-          pwd
-          ls
-          echo "Hello ! This is main workflow"
+      - uses: ./.github/workflows/github-actions-demo.yml
