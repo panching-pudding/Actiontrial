@@ -5,11 +5,11 @@ on:
 
 jobs:
   Explore-Github-Actions:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: run PSScript in trial
-        shell: pwsh
+        # shell: pwsh
         run: |
           echo "Hello ! This is trial workflow"
 
