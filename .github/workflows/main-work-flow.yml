@@ -1,9 +1,10 @@
-name: Caller Job
+name: main job
 on:
   workflow_dispatch:
+  push:
 
 jobs:
-  Reuse:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: ./.github/workflows/callee.yml
+  main:
+    uses: ./.github/workflows/callee.yml
+
+
