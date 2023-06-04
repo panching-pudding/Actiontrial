@@ -3,7 +3,7 @@ name: Main workflow
 on:
   workflow_run:
     workflows:
-      - "Explore-Github-Actions"
+      - "Github Action training"
     types:
     - completed
 
