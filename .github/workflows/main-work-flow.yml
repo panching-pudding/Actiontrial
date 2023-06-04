@@ -5,8 +5,9 @@ on:
 
 jobs:
   Main-Actions:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: run trial workflow
-        uses: ./.github/workflows/github-actions-demo.yml
+        uses: ./.github/workflows/github-actions-demo

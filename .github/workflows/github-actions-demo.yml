@@ -7,8 +7,9 @@ jobs:
   Explore-Github-Actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: run PSScript in trial
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: run Script in trial
         # shell: pwsh
         run: |
           echo "Hello ! This is trial workflow"
