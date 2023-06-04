@@ -1,11 +1,7 @@
 name: Main workflow
 
 on:
-  workflow_run:
-    workflows:
-      - "Github Action training"
-    types:
-    - completed
+  push:
 
 jobs:
   Main-Actions:
