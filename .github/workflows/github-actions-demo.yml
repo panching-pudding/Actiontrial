@@ -8,8 +8,8 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
-      - name: run PSScript
+      - name: run PSScript in trial
         shell: pwsh
         run: |
-          echo "Hello World"
+          echo "Hello ! This is trial workflow"
 

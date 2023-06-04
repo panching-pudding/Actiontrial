@@ -1,0 +1,18 @@
+name: Main workflow
+
+on:
+  workflow_run:
+    workflows:
+      - "Explore-Github-Actions"
+    types:
+    - completed
+
+jobs:
+  Main-Actions:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: run PSScript in main
+        shell: pwsh
+        run: |
+          echo "Hello ! This is main workflow"
