@@ -1,13 +1,7 @@
-name: Main workflow
-
+name: Caller Job
 on:
-  push:
+  workflow_dispatch:
 
 jobs:
-  Main-Actions:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@main
-      - name: run trial workflow
-        uses: ./.github/workflows/github-actions-demo
+  Reuse:
+    uses: ./.github/workflows/callee.yml
