@@ -4,4 +4,6 @@ on:
 
 jobs:
   Reuse:
-    uses: ./.github/workflows/callee.yml
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/workflows/callee.yml
