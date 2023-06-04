@@ -1,0 +1,16 @@
+name: main job
+on:
+  push:
+
+jobs:
+  reload:
+    uses: ./.github/workflows/callee.yml
+  main:
+    runs-on: windows-latest
+    needs: reload
+    steps:
+      - uses: actions/checkout@v3
+      - name: run script
+        shell: pwsh
+        run: echo "run main"
+

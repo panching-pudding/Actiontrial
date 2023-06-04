@@ -1,6 +1,7 @@
 name: Callee Job
 on:
   workflow_call:
+  workflow_dispatch:
 
 jobs:
   Build:
