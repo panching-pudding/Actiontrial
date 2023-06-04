@@ -12,4 +12,5 @@ jobs:
       - name: run PSScript in main
         shell: pwsh
         run: |
+          pwd
           echo "Hello ! This is main workflow"
