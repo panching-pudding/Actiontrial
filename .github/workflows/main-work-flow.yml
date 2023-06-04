@@ -13,4 +13,5 @@ jobs:
         shell: pwsh
         run: |
           pwd
+          ls
           echo "Hello ! This is main workflow"
