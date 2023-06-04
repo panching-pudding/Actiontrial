@@ -1,13 +1,12 @@
 name: Github Action training
 on:
-  push:
   workflow_dispatch:
+  workflow_call:
 
 jobs:
   Explore-Github-Actions:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v3
       - name: run PSScript in trial
         shell: pwsh
         run: |

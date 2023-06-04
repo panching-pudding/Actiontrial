@@ -12,6 +12,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: ./.github/workflows/github-actions-demo.yml
       - name: run PSScript in main
         shell: pwsh
         run: |
